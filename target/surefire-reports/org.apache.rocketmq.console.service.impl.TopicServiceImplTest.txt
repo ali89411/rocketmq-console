@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.rocketmq.console.service.impl.TopicServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 76.817 sec <<< FAILURE! - in org.apache.rocketmq.console.service.impl.TopicServiceImplTest
+deleteTopic(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 7.355 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+
+examineTopicConfigList(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 5.497 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+
+sendTopicMessageRequest(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 5.46 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+
+deleteTopic1(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 5.493 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+
+deleteTopicInBroker(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 5.497 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+
+route(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 5.541 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+
+stats(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 5.531 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+
+queryTopicConsumerInfo(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 5.513 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+
+createOrUpdate(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 5.518 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+
+examineTopicConfig(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 5.535 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+
+fetchAllTopicList(org.apache.rocketmq.console.service.impl.TopicServiceImplTest)  Time elapsed: 5.496 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.TopicServiceImplTest.setUp(TopicServiceImplTest.java:57)
+

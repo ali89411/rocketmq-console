@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 77.553 sec <<< FAILURE! - in org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest
+queryGroupList(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 7.604 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+
+createAndUpdateSubscriptionGroupConfig(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 5.623 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+
+queryConsumeStatsListByGroupName(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 5.519 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+
+queryConsumeStatsList(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 5.561 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+
+getConsumerConnection(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 5.512 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+
+resetOffset(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 5.452 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+
+queryGroup(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 5.419 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+
+deleteSubGroup(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 5.487 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+
+examineSubscriptionGroupConfig(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 5.427 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+
+queryConsumeStatsListByTopicName(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 5.523 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+
+fetchBrokerNameSetBySubscriptionGroup(org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest)  Time elapsed: 5.415 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ConsumerServiceImplTest.setUp(ConsumerServiceImplTest.java:55)
+

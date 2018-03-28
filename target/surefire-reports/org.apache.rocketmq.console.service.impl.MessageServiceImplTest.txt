@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.rocketmq.console.service.impl.MessageServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 41.402 sec <<< FAILURE! - in org.apache.rocketmq.console.service.impl.MessageServiceImplTest
+consumeMessageDirectly(org.apache.rocketmq.console.service.impl.MessageServiceImplTest)  Time elapsed: 7.288 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.MessageServiceImplTest.setUp(MessageServiceImplTest.java:56)
+
+queryMessageByTopicAndKey(org.apache.rocketmq.console.service.impl.MessageServiceImplTest)  Time elapsed: 5.606 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.MessageServiceImplTest.setUp(MessageServiceImplTest.java:56)
+
+viewMessage(org.apache.rocketmq.console.service.impl.MessageServiceImplTest)  Time elapsed: 5.516 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.MessageServiceImplTest.setUp(MessageServiceImplTest.java:56)
+
+messageTrackDetail(org.apache.rocketmq.console.service.impl.MessageServiceImplTest)  Time elapsed: 5.551 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.MessageServiceImplTest.setUp(MessageServiceImplTest.java:56)
+
+queryMessageByTopic(org.apache.rocketmq.console.service.impl.MessageServiceImplTest)  Time elapsed: 5.52 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.MessageServiceImplTest.setUp(MessageServiceImplTest.java:56)
+

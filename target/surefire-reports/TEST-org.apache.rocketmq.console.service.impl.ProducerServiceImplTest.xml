@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.rocketmq.console.service.impl.ProducerServiceImplTest" time="19.267" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.7.0_67\jre\bin"/>
+    <property name="java.vm.version" value="24.65-b04"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\rocketmq-externals\rocketmq-console"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\rocketmq-externals\rocketmq-console"/>
+    <property name="java.runtime.version" value="1.7.0_67-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="E:\Tools\apache-maven-3.3.3-bin\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.7.0_67\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\oracle\product\10.2.0\client_1;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Git\cmd;C:\Program Files (x86)\Java\jdk1.7.0_67\bin;E:\Tools\apache-maven-3.3.3-bin\bin;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="E:\Tools\apache-maven-3.3.3-bin\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.7.0_67\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.7.0_67"/>
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.7.0_67\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.7.0_67\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\Tools\apache-maven-3.3.3-bin\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase name="getProducerConnection" classname="org.apache.rocketmq.console.service.impl.ProducerServiceImplTest" time="7.374">
+    <error message="send message error" type="java.lang.RuntimeException">java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ProducerServiceImplTest.setUp(ProducerServiceImplTest.java:47)
+</error>
+    <system-out><![CDATA[[2018-03-14 12:06:30.366]  WARN AllocateMappedFileService interrupted, possibly by shutdown.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.3.RELEASE)
+
+[2018-03-14 12:06:38.037]  WARN get Topic [TEST_CONSOLE_TOPIC] RouteInfoFromNameServer is not exist value
+[2018-03-14 12:06:38.037]  WARN updateTopicRouteInfoFromNameServer Exception
+org.apache.rocketmq.client.exception.MQClientException: CODE: 17  DESC: No topic route info in name server for the topic: TEST_CONSOLE_TOPIC
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1212)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:555)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:449)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.updateTopicSubscribeInfoWhenSubscriptionChanged(DefaultMQPushConsumerImpl.java:802)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.start(DefaultMQPushConsumerImpl.java:617)
+	at org.apache.rocketmq.client.consumer.DefaultMQPushConsumer.start(DefaultMQPushConsumer.java:456)
+	at org.apache.rocketmq.console.testbase.RocketMQConsoleTestBase.startTestMQConsumer(RocketMQConsoleTestBase.java:137)
+	at org.apache.rocketmq.console.testbase.RocketMQConsoleTestBase.initMQClientEnv(RocketMQConsoleTestBase.java:156)
+	at org.apache.rocketmq.console.service.impl.ProducerServiceImplTest.setUp(ProducerServiceImplTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[2018-03-14 12:06:38.058]  WARN get Topic [%RETRY%CONSOLE_TEST_CONSUMER_GROUP] RouteInfoFromNameServer is not exist value
+[2018-03-14 12:06:38.060]  WARN get Topic [TEST_CONSOLE_TOPIC] RouteInfoFromNameServer is not exist value
+[2018-03-14 12:06:38.061]  WARN updateTopicRouteInfoFromNameServer Exception
+org.apache.rocketmq.client.exception.MQClientException: CODE: 17  DESC: No topic route info in name server for the topic: TEST_CONSOLE_TOPIC
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1212)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:555)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:449)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:356)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance$3.run(MQClientInstance.java:273)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2018-03-14 12:06:38.071]  WARN get Topic [%RETRY%CONSOLE_TEST_CONSUMER_GROUP] RouteInfoFromNameServer is not exist value
+[2018-03-14 12:06:38.075]  WARN get Topic [TEST_CONSOLE_TOPIC] RouteInfoFromNameServer is not exist value
+[2018-03-14 12:06:38.076]  WARN updateTopicRouteInfoFromNameServer Exception
+org.apache.rocketmq.client.exception.MQClientException: CODE: 17  DESC: No topic route info in name server for the topic: TEST_CONSOLE_TOPIC
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1212)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:555)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:449)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.findConsumerIdList(MQClientInstance.java:990)
+	at org.apache.rocketmq.client.impl.consumer.RebalanceImpl.rebalanceByTopic(RebalanceImpl.java:260)
+	at org.apache.rocketmq.client.impl.consumer.RebalanceImpl.doRebalance(RebalanceImpl.java:223)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.doRebalance(DefaultMQPushConsumerImpl.java:925)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.doRebalance(MQClientInstance.java:900)
+	at org.apache.rocketmq.client.impl.consumer.RebalanceService.run(RebalanceService.java:44)
+	at java.lang.Thread.run(Thread.java:745)
+[2018-03-14 12:06:38.076]  WARN doRebalance, CONSOLE_TEST_CONSUMER_GROUP, but the topic[TEST_CONSOLE_TOPIC] not exist.
+[2018-03-14 12:06:38.076]  WARN doRebalance, CONSOLE_TEST_CONSUMER_GROUP TEST_CONSOLE_TOPIC, get consumer id list failed
+[2018-03-14 12:06:38.078]  WARN get Topic [%RETRY%CONSOLE_TEST_CONSUMER_GROUP] RouteInfoFromNameServer is not exist value
+[2018-03-14 12:06:38.078]  WARN doRebalance, CONSOLE_TEST_CONSUMER_GROUP %RETRY%CONSOLE_TEST_CONSUMER_GROUP, get consumer id list failed
+[2018-03-14 12:06:38.909]  WARN get Topic [TEST_CONSOLE_TOPIC] RouteInfoFromNameServer is not exist value
+[2018-03-14 12:06:38.909]  WARN updateTopicRouteInfoFromNameServer Exception
+org.apache.rocketmq.client.exception.MQClientException: CODE: 17  DESC: No topic route info in name server for the topic: TEST_CONSOLE_TOPIC
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1212)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:555)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:449)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.tryToFindTopicPublishInfo(DefaultMQProducerImpl.java:567)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:442)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1049)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1008)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:204)
+	at org.apache.rocketmq.console.testbase.RocketMQConsoleTestBase.sendTestTopicMessage(RocketMQConsoleTestBase.java:107)
+	at org.apache.rocketmq.console.service.impl.ProducerServiceImplTest.setUp(ProducerServiceImplTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[2018-03-14 12:06:39.075]  WARN doRebalance, CONSOLE_TEST_CONSUMER_GROUP, but the topic[TEST_CONSOLE_TOPIC] not exist.
+[2018-03-14 12:06:39.162] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:39.162]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:39.378] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:39.378]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:39.593] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:39.593]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:39.825] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:39.825]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:40.040] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:40.040]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:40.253] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:40.253]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:40.464] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:40.465]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:40.684] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:40.684]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:40.900] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:40.901]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:41.114] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:41.114]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:41.324] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:41.325]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:41.539] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:41.539]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:41.758] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:41.758]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:41.934]  WARN invokeSync: wait response timeout exception, the channel[127.0.0.1:19053]
+[2018-03-14 12:06:41.934]  WARN sendKernelImpl exception, resend at once, InvokeID: 8443021722903947369, RT: 3023ms, Broker: MessageQueue [topic=TEST_CONSOLE_TOPIC, brokerName=ConsoleTestBroker, queueId=3]
+org.apache.rocketmq.remoting.exception.RemotingTimeoutException: wait response on the channel <127.0.0.1:19053> timeout, 3000(ms)
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.invokeSyncImpl(NettyRemotingAbstract.java:291)
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.invokeSync(NettyRemotingClient.java:338)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessageSync(MQClientAPIImpl.java:343)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessage(MQClientAPIImpl.java:327)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessage(MQClientAPIImpl.java:290)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendKernelImpl(DefaultMQProducerImpl.java:688)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:458)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1049)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1008)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:204)
+	at org.apache.rocketmq.console.testbase.RocketMQConsoleTestBase.sendTestTopicMessage(RocketMQConsoleTestBase.java:107)
+	at org.apache.rocketmq.console.service.impl.ProducerServiceImplTest.setUp(ProducerServiceImplTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[2018-03-14 12:06:41.935]  WARN Message [topic=TEST_CONSOLE_TOPIC, flag=0, properties={KEYS=TEST_TOPIC_KEY, WAIT=true, UNIQ_KEY=C0A859EB30A4011E1E6742F8C23F0010}, body=11]
+[2018-03-14 12:06:41.938]  WARN sendKernelImpl exception, resend at once, InvokeID: 8443021722903947369, RT: 3ms, Broker: MessageQueue [topic=TEST_CONSOLE_TOPIC, brokerName=ConsoleTestBroker, queueId=1]
+org.apache.rocketmq.client.exception.MQBrokerException: CODE: 2  DESC: [REJECTREQUEST]system busy, start flow control for a while
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.processSendResponse(MQClientAPIImpl.java:531)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessageSync(MQClientAPIImpl.java:345)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessage(MQClientAPIImpl.java:327)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessage(MQClientAPIImpl.java:290)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendKernelImpl(DefaultMQProducerImpl.java:688)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:458)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1049)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1008)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:204)
+	at org.apache.rocketmq.console.testbase.RocketMQConsoleTestBase.sendTestTopicMessage(RocketMQConsoleTestBase.java:107)
+	at org.apache.rocketmq.console.service.impl.ProducerServiceImplTest.setUp(ProducerServiceImplTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[2018-03-14 12:06:41.939]  WARN Message [topic=TEST_CONSOLE_TOPIC, flag=0, properties={KEYS=TEST_TOPIC_KEY, WAIT=true, UNIQ_KEY=C0A859EB30A4011E1E6742F8C23F0010}, body=11]
+[2018-03-14 12:06:41.971] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:41.971]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:42.185] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:42.185]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:42.401] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:42.401]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:42.510]  WARN sendKernelImpl exception, resend at once, InvokeID: -7956569215478630938, RT: 1ms, Broker: MessageQueue [topic=TEST_CONSOLE_TOPIC, brokerName=ConsoleTestBroker, queueId=2]
+org.apache.rocketmq.client.exception.MQBrokerException: CODE: 2  DESC: [REJECTREQUEST]system busy, start flow control for a while
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.processSendResponse(MQClientAPIImpl.java:531)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessageSync(MQClientAPIImpl.java:345)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessage(MQClientAPIImpl.java:327)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessage(MQClientAPIImpl.java:290)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendKernelImpl(DefaultMQProducerImpl.java:688)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:458)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1049)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1008)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:204)
+	at org.apache.rocketmq.console.testbase.RocketMQConsoleTestBase.sendTestTopicMessage(RocketMQConsoleTestBase.java:107)
+	at org.apache.rocketmq.console.service.impl.ProducerServiceImplTest.setUp(ProducerServiceImplTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[2018-03-14 12:06:42.510]  WARN Message [topic=TEST_CONSOLE_TOPIC, flag=0, properties={KEYS=TEST_TOPIC_KEY, WAIT=true, UNIQ_KEY=C0A859EB30A4011E1E6742F8C23F0010}, body=11]
+[2018-03-14 12:06:42.619] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:42.620]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:42.846] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:42.846]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:43.011]  WARN sendKernelImpl exception, resend at once, InvokeID: -5040421001413022280, RT: 1ms, Broker: MessageQueue [topic=TEST_CONSOLE_TOPIC, brokerName=ConsoleTestBroker, queueId=3]
+org.apache.rocketmq.client.exception.MQBrokerException: CODE: 2  DESC: [REJECTREQUEST]system busy, start flow control for a while
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.processSendResponse(MQClientAPIImpl.java:531)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessageSync(MQClientAPIImpl.java:345)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessage(MQClientAPIImpl.java:327)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessage(MQClientAPIImpl.java:290)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendKernelImpl(DefaultMQProducerImpl.java:688)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:458)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1049)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1008)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:204)
+	at org.apache.rocketmq.console.testbase.RocketMQConsoleTestBase.sendTestTopicMessage(RocketMQConsoleTestBase.java:107)
+	at org.apache.rocketmq.console.service.impl.ProducerServiceImplTest.setUp(ProducerServiceImplTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[2018-03-14 12:06:43.011]  WARN Message [topic=TEST_CONSOLE_TOPIC, flag=0, properties={KEYS=TEST_TOPIC_KEY, WAIT=true, UNIQ_KEY=C0A859EB30A4011E1E6742F8C23F0010}, body=11]
+[2018-03-14 12:06:43.064] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:43.064]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:43.272] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:43.273]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:43.493] ERROR map file C:\Users\Administrator\rocketmq-console-test\20180314120634\commitlog\00000000000000000000 Failed. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+[2018-03-14 12:06:43.493]  WARN AllocateMappedFileService service has exception. 
+java.io.IOException: Map failed
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:888)
+	at org.apache.rocketmq.store.MappedFile.init(MappedFile.java:160)
+	at org.apache.rocketmq.store.MappedFile.<init>(MappedFile.java:71)
+	at org.apache.rocketmq.store.AllocateMappedFileService.mmapOperation(AllocateMappedFileService.java:182)
+	at org.apache.rocketmq.store.AllocateMappedFileService.run(AllocateMappedFileService.java:143)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.OutOfMemoryError: Map failed
+	at sun.nio.ch.FileChannelImpl.map0(Native Method)
+	at sun.nio.ch.FileChannelImpl.map(FileChannelImpl.java:885)
+	... 5 common frames omitted
+]]></system-out>
+  </testcase>
+</testsuite>

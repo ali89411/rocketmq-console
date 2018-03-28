@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.rocketmq.console.service.impl.ProducerServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 19.267 sec <<< FAILURE! - in org.apache.rocketmq.console.service.impl.ProducerServiceImplTest
+getProducerConnection(org.apache.rocketmq.console.service.impl.ProducerServiceImplTest)  Time elapsed: 7.374 sec  <<< ERROR!
+java.lang.RuntimeException: send message error
+	at org.apache.rocketmq.console.service.impl.ProducerServiceImplTest.setUp(ProducerServiceImplTest.java:47)
+
